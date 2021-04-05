@@ -1,6 +1,5 @@
 const initialState = {
     attorneys: [],
-    loading: true
 }
 
 const attorneysReducer = (state, action) => {

@@ -11,9 +11,9 @@ const store = createStore(attorneysReducer, applyMiddleware(thunk))
 
 ReactDOM.render(
   <React.StrictMode>
-  <Provider store={store}></Provider>
+  <Provider store={store}>
     <App />
-  <Provider />
+  </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
