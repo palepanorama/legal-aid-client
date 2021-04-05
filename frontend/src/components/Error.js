@@ -4,7 +4,7 @@ class Error extends Component {
     render() {
         return (
             <div>
-                Error
+                Whoops! Something went wrong. 
             </div>
         )
     }

@@ -2,7 +2,7 @@ const initialState = {
     attorneys: [],
 }
 
-const attorneysReducer = (state, action) => {
+const attorneysReducer = (state=initialState, action) => {
     switch(action.type) {
         default: 
             return state;
