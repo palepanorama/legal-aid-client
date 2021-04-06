@@ -7,6 +7,12 @@ class Form extends Component {
         description: ""
     }
 
+    handleChange = e => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
+
     render() {
         return (
             <div>
@@ -14,13 +20,13 @@ class Form extends Component {
                 <form>
                     <div>
                         <label htmlFor="name">Your Name: </label>
-                        <input type="text" id="name" value={ this.state.name } />
+                        <input type="text" id="name" name="name" value={ this.state.name } onChange={ this.handleChange } />
                         <br/>
                         <label htmlFor="location">Your Location: </label>
-                        <input type="text" id="location" value={ this.state.location } />
+                        <input type="text" id="location" name="location"value={ this.state.location } onChange= {this.handleChange } />
                         <br />
                         <p><label htmlFor="description">Description: </label></p>
-                        <textarea id="description" cols="30" rows="3" value={ this.state.description } placeholder="A brief description of the services you offer..."></textarea>
+                        <textarea id="description" name="description" cols="30" rows="3" value={ this.state.description } onChange={ this.handleChange } placeholder="A brief description of the services you offer..."></textarea>
                     </div>
                     <input type="submit" value="Register" />
                 </form>
