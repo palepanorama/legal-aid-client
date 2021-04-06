@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { getAttorneys } from './actions';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import Footer from './components/Footer';
@@ -9,13 +11,14 @@ import ErrorPage from './components/Error';
 
 class App extends Component {
   render() {
-    return(
+
+    return( 
       <Router>
         <Nav />
         <Switch>
           <Route exact path="/" component= { Home } />
           <Route exact path="/about" component= { About } />
-          <Route exact path="/attorneys" render= {props => <List /> } />
+          <Route exact path="/attorneys" component= { List } />
           <Route component= { ErrorPage } />
         </Switch>
         <Footer />
@@ -24,4 +27,10 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    loading: state.loading
+  }
+}
+
+export default connect(mapStateToProps, { getAttorneys })(App);
