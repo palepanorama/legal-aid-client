@@ -11,6 +11,11 @@ import ErrorPage from './components/Error';
 
 class App extends Component {
   render() {
+    if (this.props.loading) {
+      return (
+        <h3>Loading...</h3>
+      )
+    }
 
     return( 
       <Router>
