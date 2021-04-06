@@ -3,6 +3,6 @@ export const getAttorneys = () => {
         dispatch( {type: "LOADING"} )
         fetch("http://localhost3001/attorneys")
         .then(resp => resp.json())
-        .then(attorneys => dispatch({ type: "SET_BLOGS", attorneys }))
+        .then(attorneys => dispatch({ type: "SET_ATTORNEYS", attorneys }))
     }
 }
