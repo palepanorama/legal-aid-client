@@ -13,11 +13,17 @@ class Form extends Component {
         })
     }
 
+    handleSubmit = e => {
+        e.preventDefault();
+
+        console.log(this.state)
+    }
+
     render() {
         return (
             <div>
                 <h3>Apply to Offer Your Services</h3>
-                <form>
+                <form onSubmit={ this.handleSubmit }>
                     <div>
                         <label htmlFor="name">Your Name: </label>
                         <input type="text" id="name" name="name" value={ this.state.name } onChange={ this.handleChange } />
