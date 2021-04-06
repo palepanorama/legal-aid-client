@@ -5,9 +5,9 @@ class Attorney extends Component {
         const {name, location, description } = this.props;
         return (
             <div>
-                <h3>{ name }</h3>
-                <h6>{ location }</h6>
-                <p>{ description }</p>
+                <h3>Attorney: { name }</h3>
+                <h5>Location: { location }</h5>
+                <p>Services Offered: { description }</p>
             </div>
         )
     }
