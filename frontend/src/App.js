@@ -10,6 +10,11 @@ import List from './components/List';
 import ErrorPage from './components/Error';
 
 class App extends Component {
+
+  componentDidMount() {
+    this.props.getAttorneys();
+  }
+
   render() {
     if (this.props.loading) {
       return (
