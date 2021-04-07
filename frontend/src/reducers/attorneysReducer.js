@@ -16,6 +16,11 @@ const attorneysReducer = (state=initialState, action) => {
                 loading: false,
                 attorneys: action.attorneys
             }
+        case "ADD_ATTORNEY":
+            return {
+                ...state,
+                attorneys: [...state.attorneys, action.attorney]
+            }
         default: 
             return state;
     }

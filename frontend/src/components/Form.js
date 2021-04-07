@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { addAttorney } from '../actions'
 
 class Form extends Component {
     state = {
@@ -11,12 +13,13 @@ class Form extends Component {
         this.setState({
             [e.target.name]: e.target.value
         })
+
     }
 
     handleSubmit = e => {
         e.preventDefault();
 
-        console.log(this.state)
+        this.props.addAttorney(this.state, this.props.history);
     }
 
     render() {
@@ -41,4 +44,4 @@ class Form extends Component {
     }
 }
 
-export default Form
+export default connect(null, { addAttorney })(Form)
