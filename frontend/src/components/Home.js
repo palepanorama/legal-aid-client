@@ -5,7 +5,7 @@ class Home extends Component {
         return (
             <div className="App">
                 <h2>Pro Bono or Low Cost Legal Representation</h2>
-                <p>Here's your home page, idiot!</p>
+                <p>Here at Matt's Legal Aid, we believe all people have a right to adequate legal representation, especially in cases where civil rights infractions have occured. Use our app to find legal experts in your area who have agreed to provide advisement or representation pro bono (for free) or at a highly discounted rate. </p>
             </div>
         )
     }
