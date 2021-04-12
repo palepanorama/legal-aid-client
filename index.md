@@ -1,1 +1,6 @@
-Test..
+# Flatiron Final Project: Legal Aid
+For my final project, I decided to create something I would be passionate about in the real world. This led me to an idea: a site that would be like Airbnb for users in search of legal representation with one caveat- that legal representation must be either pro bono or at a drastically reduced rate. 
+
+To start off, I used create-react-app to generate the frontend of my project along with rails scaffolding to set up my API. Once I had created my migration and added some seed data, I began to work exclusively on my React frontend. I created eight different components, five of which are stateless. I employed four different routes making use of react-router: home, about, list and form. Redux was a true game-changer for this project, as it allowed me to handle state in the global store, making accessing state from my components far easier than if it were all being handled in my App.js file. Using two different fetch calls in my action file, I was able to retrieve and add attorneys to my Rails API. For styling, I decided to keep it minimal and use some bootstrap.
+
+During this project, more than any other, I felt like everything just sort of "clicked." Finally, I felt the full weight of my Flatiron education coming to bear on a single project. I cannot wait to get out into the job search and apply all of these skills and knowledge!
