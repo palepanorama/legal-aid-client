@@ -1,5 +1,18 @@
-.App {
+body {
+  background-color: dimgray;
+  color: black;
+  padding: 40px;
+  font-family: sans-serif;
   text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.Footer {
+  position: fixed;
+  bottom: 0;
 }
 
 .App-logo {

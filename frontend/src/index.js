@@ -7,6 +7,7 @@ import App from './App';
 import attorneysReducer from './reducers/attorneysReducer'
 import reportWebVitals from './reportWebVitals';
 
+
 const store = createStore(attorneysReducer, applyMiddleware(thunk))
 
 ReactDOM.render(

@@ -7,6 +7,7 @@ class List extends Component {
         const attorneys = this.props.attorneys.map ((attorney, i) => <Attorney key={i} name={ attorney.name } location={ attorney.location } description={ attorney.description } />)
         return (
             <div>
+            <h4>Attorneys List</h4>
                 { attorneys }
             </div>
         )
