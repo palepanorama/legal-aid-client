@@ -17,7 +17,6 @@ class Form extends Component {
 
     handleSubmit = e => {
         e.preventDefault();
-
         this.props.addAttorney(this.state, this.props.history);
     }
 
@@ -31,7 +30,7 @@ class Form extends Component {
                         <input type="text" id="name" name="name" value={ this.state.name } onChange={ this.handleChange } />
                         <br/>
                         <label htmlFor="location">Your Location: </label>
-                        <input type="text" id="location" name="location"value={ this.state.location } onChange= {this.handleChange } />
+                        <input type="text" id="location" name="location" value={ this.state.location } onChange= {this.handleChange } />
                         <br />
                         <p><label htmlFor="description">Description: </label></p>
                         <textarea id="description" name="description" cols="30" rows="3" value={ this.state.description } onChange={ this.handleChange } placeholder="A brief description of the services you offer..."></textarea>

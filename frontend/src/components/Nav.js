@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Nav extends Component {
     render() {
         return (
-            <div className="Nav">
+            <div class="nav nav-masthead justify-content-center">
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link></li>
