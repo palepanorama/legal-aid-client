@@ -31,7 +31,6 @@ class List extends Component {
     
 
     render() {
-        console.log(this.state)
         const attorneys = this.props.attorneys.map ((attorney, i) => <Attorney key={i} name={ attorney.name } location={ attorney.location } description={ attorney.description } />)
         return (
             <div>

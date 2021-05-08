@@ -20,12 +20,6 @@ const attorneysReducer = (state=initialState, action) => {
                 ...state,
                 attorneys: [...state.attorneys, action.attorney]
             }
-        case "SORT_ATTORNEYS":
-            return state.attorneys.slice().sort(function (location1, location2) {
-                if (location1.name < location2.name) return -1;
-                if (location1.name < location2.name) return 1;
-                return 0;
-            })
         default: 
             return state;
     }

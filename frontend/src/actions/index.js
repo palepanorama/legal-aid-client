@@ -26,16 +26,5 @@ export const getAttorneys = () => {
     }
   }
 
-  export const sortAttorneys = (attorney, history) => {
-    return dispatch => {
-      fetch("http://localhost:3001/attorneys")
-        .then(resp => resp.json)
-        .then(data => {
-          dispatch({type: "SORT_ATTORNEYS", attorney})
-          history.push("/attorneys")
-        })
-      
-        
-    }
-  }
+
   
